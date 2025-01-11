@@ -43,6 +43,21 @@
     transition: color 0.3s;
     padding-right:35px;
   }
+
+  .menuLink.active {
+    color: #ccc;
+    font-weight: bold;
+  }
+
+  .menuLink.active:hover {
+    cursor: default;
+  }
+
+  .menuLink.active::after {
+    color: #ccc;
+    content:"";
+  }
+
   
   .menuLink:hover {
     color: #ccc;
@@ -64,12 +79,15 @@
     transform: translateX(-18px);
   }
 
-  @media (max-width: 728px) {
+  @media (max-width: 770px) {
 
     .menuToggle {
       display: block;
       padding-right:40px;
     }
+    .menuToggle:hover {
+        color: #ccc;
+      }
   
     .linkBox {
       display: none;

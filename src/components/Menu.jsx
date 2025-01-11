@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../styles/Menu.css'; 
+import { NavLink } from 'react-router-dom';
+import '../styles/Menu.css';
 
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,18 +17,44 @@ const Menu = () => {
     <header className="menuBar">
       <div className="titleBox">Mélissa Vallée's Portfolio</div>
       <button className="menuToggle" onClick={toggleMenu}>
-        ☰ 
+        ☰
       </button>
       <nav className={`linkBox ${isMenuOpen ? 'open' : ''}`}>
-        <a className="menuLink" href="#home" onClick={closeMenu}>Home</a>
-        <a className="menuLink" href="#about" onClick={closeMenu}>About</a>
-        <a className="menuLink" href="#services" onClick={closeMenu}>Projects</a>
-        <a className="menuLink" href="#contact" onClick={closeMenu}>Contact</a>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'menuLink active' : 'menuLink')}
+          to="/"
+          onClick={closeMenu}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'menuLink active' : 'menuLink')}
+          to="/about"
+          onClick={closeMenu}
+        >
+          About
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'menuLink active' : 'menuLink')}
+          to="/projects"
+          onClick={closeMenu}
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'menuLink active' : 'menuLink')}
+          to="/contact"
+          onClick={closeMenu}
+        >
+          Contact
+        </NavLink>
       </nav>
     </header>
   );
 };
 
 export default Menu;
+
+
 
 
