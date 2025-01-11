@@ -1,10 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Menu from './components/Menu';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Menu from "./components/Menu";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import "./App.css";
 
 const App = () => {
   return (
@@ -21,4 +22,3 @@ const App = () => {
 };
 
 export default App;
-

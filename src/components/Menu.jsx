@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import '../styles/Menu.css';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "../styles/Menu.css";
 
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,30 +19,38 @@ const Menu = () => {
       <button className="menuToggle" onClick={toggleMenu}>
         ☰
       </button>
-      <nav className={`linkBox ${isMenuOpen ? 'open' : ''}`}>
+      <nav className={`linkBox ${isMenuOpen ? "open" : ""}`}>
         <NavLink
-          className={({ isActive }) => (isActive ? 'menuLink active' : 'menuLink')}
+          className={({ isActive }) =>
+            isActive ? "menuLink active" : "menuLink"
+          }
           to="/"
           onClick={closeMenu}
         >
           Home
         </NavLink>
         <NavLink
-          className={({ isActive }) => (isActive ? 'menuLink active' : 'menuLink')}
+          className={({ isActive }) =>
+            isActive ? "menuLink active" : "menuLink"
+          }
           to="/about"
           onClick={closeMenu}
         >
           About
         </NavLink>
         <NavLink
-          className={({ isActive }) => (isActive ? 'menuLink active' : 'menuLink')}
+          className={({ isActive }) =>
+            isActive ? "menuLink active" : "menuLink"
+          }
           to="/projects"
           onClick={closeMenu}
         >
           Projects
         </NavLink>
         <NavLink
-          className={({ isActive }) => (isActive ? 'menuLink active' : 'menuLink')}
+          className={({ isActive }) =>
+            isActive ? "menuLink active" : "menuLink"
+          }
           to="/contact"
           onClick={closeMenu}
         >
@@ -54,7 +62,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-
-
-

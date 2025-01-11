@@ -22,7 +22,7 @@
   }
 
 .menuBar {
-    background-color: #000;
+    background-color: #313131;
     color: #fff;
     position: fixed;
     top: 0;
@@ -46,11 +46,6 @@
 
   .menuLink.active {
     color: #ccc;
-    font-weight: bold;
-  }
-
-  .menuLink.active:hover {
-    cursor: default;
   }
 
   .menuLink.active::after {
@@ -69,7 +64,7 @@
     right: 0;
     opacity: 0; 
     transform: translateX(-30px);
-    transition: transform 0.4s ease, opacity 0.4s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     font-size: 1em;
     color: #ccc;
   }
@@ -92,9 +87,9 @@
     .linkBox {
       display: none;
       flex-direction: column;
-      background-color: #000;
+      background-color: #313131;
       position: absolute;
-      opacity:0.8;
+      opacity:0.9;
       top: 100%;
       right:0;
       width: 23%;
