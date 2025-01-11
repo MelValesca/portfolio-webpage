@@ -1,6 +1,8 @@
 .titleBox {
     display:flex;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
     padding-left:3%;
 }
 
@@ -9,6 +11,15 @@
     justify-content: flex-end;
     padding-right:60px;
 }
+
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+  }
 
 .menuBar {
     background-color: #000;
@@ -51,4 +62,33 @@
   .menuLink:hover::after {
     opacity: 0.7;
     transform: translateX(-18px);
+  }
+
+  @media (max-width: 728px) {
+
+    .menuToggle {
+      display: block;
+      padding-right:40px;
+    }
+  
+    .linkBox {
+      display: none;
+      flex-direction: column;
+      background-color: #000;
+      position: absolute;
+      opacity:0.8;
+      top: 100%;
+      right:0;
+      width: 23%;
+      gap: 5px;
+    }
+  
+    .linkBox.open {
+      display: flex;
+    }
+  
+    .menuLink {
+      padding: 10px 20px;
+      text-align: left;
+    }
   }
