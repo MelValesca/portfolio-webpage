@@ -1,0 +1,54 @@
+.titleBox {
+    display:flex;
+    font-size: 1.5em;
+    padding-left:3%;
+}
+
+.linkBox {
+    display:flex;
+    justify-content: flex-end;
+    padding-right:60px;
+}
+
+.menuBar {
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .menuLink {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+    padding-right:35px;
+  }
+  
+  .menuLink:hover {
+    color: #ccc;
+  }
+
+  .menuLink::after {
+    content: '→';
+    position: absolute;
+    right: 0;
+    opacity: 0; 
+    transform: translateX(-30px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    font-size: 1em;
+    color: #ccc;
+  }
+  
+  .menuLink:hover::after {
+    opacity: 0.7;
+    transform: translateX(-18px);
+  }
