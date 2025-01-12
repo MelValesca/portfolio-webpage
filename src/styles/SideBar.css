@@ -1,0 +1,69 @@
+.sideBarWrap {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    background-color: #313131;
+    margin-top: 0;
+    padding-top: 90px;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .categoryWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+  
+  .sideBarArrow {
+    padding-top: 3px;
+    padding-left: 3px;
+  }
+
+  .sideBarOpacity {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .categoryWrap:hover {
+    color: #c3c3c3;
+    cursor: pointer;
+  }
+  
+  .categoryHeader {
+    display:flex;
+    justify-content: flex-end;
+    height: 100%;
+    border: 0.8px solid #c3c3c3;
+    padding: 10px;
+  }
+  
+  .categoryLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .sideBarLink {
+    padding:6px 20px;
+    color: #bbb;
+    transition: color 0.3s ease;
+    border-bottom: 1px solid black;
+  }
+  
+  .sideBarLink:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+  .sideBarLink:active {
+    font-size: 0.95em;
+  }
+
+  
+  
