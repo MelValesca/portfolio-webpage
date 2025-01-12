@@ -8,9 +8,16 @@ import Contact from "./pages/Contact";
 import "./App.css";
 
 const App = () => {
+  const menuLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
     <Router>
-      <Menu />
+      <Menu title="Mélissa Vallée's Portfolio" links={menuLinks} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

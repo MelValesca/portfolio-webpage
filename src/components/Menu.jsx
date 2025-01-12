@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Menu.css";
 
-const Menu = () => {
+const Menu = ({ title, links }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,47 +15,23 @@ const Menu = () => {
 
   return (
     <header className="menuBar">
-      <div className="titleBox">Mélissa Vallée's Portfolio</div>
+      <div className="titleBox">{title}</div>
       <button className="menuToggle" onClick={toggleMenu}>
         ☰
       </button>
       <nav className={`linkBox ${isMenuOpen ? "open" : ""}`}>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "menuLink active" : "menuLink"
-          }
-          to="/"
-          onClick={closeMenu}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "menuLink active" : "menuLink"
-          }
-          to="/about"
-          onClick={closeMenu}
-        >
-          About
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "menuLink active" : "menuLink"
-          }
-          to="/projects"
-          onClick={closeMenu}
-        >
-          Projects
-        </NavLink>
-        <NavLink
-          className={({ isActive }) =>
-            isActive ? "menuLink active" : "menuLink"
-          }
-          to="/contact"
-          onClick={closeMenu}
-        >
-          Contact
-        </NavLink>
+        {links.map((link, index) => (
+          <NavLink
+            key={index}
+            className={({ isActive }) =>
+              isActive ? "menuLink active" : "menuLink"
+            }
+            to={link.path}
+            onClick={closeMenu}
+          >
+            {link.name}
+          </NavLink>
+        ))}
       </nav>
     </header>
   );

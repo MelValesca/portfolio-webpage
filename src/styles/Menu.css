@@ -82,8 +82,8 @@
     }
     .menuToggle:hover {
         color: #ccc;
-      }
-  
+    }
+
     .linkBox {
       display: none;
       flex-direction: column;
@@ -105,3 +105,10 @@
       text-align: left;
     }
   }
+
+
+@media (max-width: 600px) {
+    .titleBox{
+      font-size: 1.5em;
+    }
+}

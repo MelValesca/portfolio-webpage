@@ -27,3 +27,9 @@ h1{
     border-radius:17px;
     background-color: #313131;;
 }
+
+@media (max-width: 770px) {
+    .screen {
+        width:89%;
+    }
+}
