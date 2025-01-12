@@ -1,0 +1,15 @@
+.contentWrap{
+    padding-left:30%;
+    padding-top:150px;
+}
+
+
+
+@media (max-width: 768px) {
+    .contentWrap{
+        display:flex;
+        justify-content: center;
+        padding-left:0%;
+        padding-top:10px;
+    }
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom"; // Import NavLink for routing
 import "../styles/SideBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
@@ -34,7 +35,13 @@ const SideBar = ({ categories }) => {
             <div className="categoryLinks">
               {category.links.map((link, i) => (
                 <div key={i} className="sideBarLink">
-                  {link}
+                  <NavLink
+                    to={link.path}
+                    className="sideBarLink"
+                    activeClassName="active"
+                  >
+                    {link.name}
+                  </NavLink>
                 </div>
               ))}
             </div>

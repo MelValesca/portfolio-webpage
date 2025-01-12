@@ -58,7 +58,7 @@
     color: #ccc;
   }
 
-  .sideBarLink::after, .menuLink::after {
+.menuLink::after {
     content: '→';
     position: absolute;
     right: 0;
@@ -68,12 +68,8 @@
     font-size: 1em;
     color: #ccc;
   }
-
-  .sideBarLink:active {
-    font-size: 0.9em; /* Smaller font size when clicked */
-  }
   
-  .sideBarLink:hover::after, .menuLink:hover::after {
+.menuLink:hover::after {
     opacity: 0.7;
     transform: translateX(-18px);
   }
