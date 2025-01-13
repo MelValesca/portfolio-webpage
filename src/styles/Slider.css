@@ -11,6 +11,7 @@
     margin-top: 20px;
     transition: height 0.3s ease;
     overflow-y: scroll;
+    overflow-x: hidden;
     height:400px;
 }
   
@@ -88,7 +89,7 @@
     }
 
     .navButton {
-        width:5px;
-        height:5px;
+        width:3px;
+        height:8px;
     }
 }
