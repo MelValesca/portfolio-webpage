@@ -1,7 +1,7 @@
 import React from "react";
 import SideBar from "../components/SideBar";
-import { Route, Routes, useNavigate } from "react-router-dom";
-import Curler from "./Curler";
+import { Route, Routes } from "react-router-dom";
+import Curler from "./projects/Curler";
 import "../styles/Projects.css";
 
 const Projects = () => {
