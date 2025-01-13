@@ -34,7 +34,10 @@ const Projects = () => {
 
       <div className="contentWrap">
         <Routes>
-          <Route path="/web-apps/test" element={<div>Content test</div>} />
+          <Route
+            path="/web-apps/test"
+            element={<div>Content Under Construction</div>}
+          />
           <Route path="/desktop-apps/curler" element={<Curler />} />
           <Route
             path="/scripts/shell"
