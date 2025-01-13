@@ -32,4 +32,8 @@ h1{
     .screen {
         width:100%;
     }
+
+    .content-main{
+        padding:10px 15px;
+    }
 }
