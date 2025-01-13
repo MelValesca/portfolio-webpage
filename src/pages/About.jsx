@@ -5,7 +5,7 @@ import Profile from "../components/Profile";
 
 const About = () => {
   const introduction = {
-    image: "/img/me.jpeg",
+    image: `${process.env.PUBLIC_URL}/img/me.jpeg`,
     title: "Introduction",
     content: [
       "I discovered my passion for technology at the age of 12, when I began creating user layouts and websites for an online game I enjoyed. Through experimentation with HTML, CSS, and JavaScript, I developed a genuine enthusiasm for web development that would stay with me throughout my life. Although I initially pursued a career in law enforcement, driven by a strong sense of justice, I eventually felt compelled to return to computer science.",
@@ -13,7 +13,7 @@ const About = () => {
     ],
   };
   const interests = {
-    image: "/img/React.png",
+    image: `${process.env.PUBLIC_URL}/img/React.png`,
     title: "Interests",
     content: [
       "I enjoy building full-stack web and mobile applications and thrive on the challenge of solving complex problems. My interest in cybersecurity, particularly in web and system security, stems from a desire to ensure that the solutions I develop are both robust and protected against potential vulnerabilities.",
@@ -29,7 +29,7 @@ const About = () => {
   };
 
   const technologies = {
-    image: "/img/Dev_TechnologyPage_LogoCloud.jpeg",
+    image: `${process.env.PUBLIC_URL}/img/Dev_TechnologyPage_LogoCloud.jpeg`,
     title: "Technologies",
     content: [
       <ol>
@@ -62,7 +62,7 @@ const About = () => {
   };
 
   const awards = {
-    image: "/img/award.jpg",
+    image: `${process.env.PUBLIC_URL}/img/award.jpg`,
     title: "Honors and Awards",
     content: [
       "Here are some recent competitions i have participated in: ",
