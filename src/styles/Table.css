@@ -13,6 +13,7 @@ td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  min-width: 90px;
 }
 th {
   background-color: #898989;
